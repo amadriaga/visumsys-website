@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Stripe Payment Integration
 // Replace 'YOUR_PUBLISHABLE_KEY' with your actual Stripe publishable key
-const stripe = Stripe('pk_test_YOUR_PUBLISHABLE_KEY');
+const stripe = Stripe('pk_test_51TNBzACpTWf2Z8GD4umymu4uwY8Uf3pByoSszLXWQW3CXgSwiIiSxp1tqjBnq3c2g6E9Zz66c17T721sDyqreMva00j5CGW1d1');
 const elements = stripe.elements();
 
 // Create card element
