@@ -313,11 +313,11 @@ Payment Form → /create-payment-intent (Pages Function)
 
 | Feature | Workers (static assets) | Pages |
 |---------|------------------------|-------|
-| Static files | ✅ Yes | ✅ Yes |
-| Environment variables | ❌ No | ✅ Yes |
-| Serverless functions | ❌ No | ✅ Yes (`/functions` folder) |
-| Custom domains | ✅ Yes | ✅ Yes |
-| Git integration | ✅ Yes | ✅ Yes |
+| Static files | Yes | Yes |
+| Environment variables | No | Yes |
+| Serverless functions | No | Yes (`/functions` folder) |
+| Custom domains | Yes | Yes |
+| Git integration | Yes | Yes |
 | Use case | Simple CDN hosting | Full Jamstack apps |
 
 **For Stripe integration, you MUST use Pages!**
@@ -337,14 +337,14 @@ Total monthly cost for low-traffic site: **~$1/month** (just the domain)
 
 ## Security Best Practices
 
-1. ✅ **Never commit secret keys to Git**
-2. ✅ **Use environment variables for all API keys**
-3. ✅ **Keep test and live keys separate**
-4. ✅ **Use Cloudflare's proxy (orange cloud) for DDoS protection**
-5. ✅ **Enable SSL/TLS (automatic with Cloudflare)**
-6. ✅ **Regularly update dependencies**
-7. ✅ **Monitor Stripe dashboard for suspicious activity**
-8. ✅ **Set up Stripe webhooks for payment confirmations (advanced)**
+1. **Never commit secret keys to Git**
+2. **Use environment variables for all API keys**
+3. **Keep test and live keys separate**
+4. **Use Cloudflare's proxy (orange cloud) for DDoS protection**
+5. **Enable SSL/TLS (automatic with Cloudflare)**
+6. **Regularly update dependencies**
+7. **Monitor Stripe dashboard for suspicious activity**
+8. **Set up Stripe webhooks for payment confirmations (advanced)**
 
 ---
 
@@ -369,4 +369,4 @@ For issues with:
 
 **Last Updated**: April 17, 2026  
 **Tested Platform**: Cloudflare Pages with Stripe integration  
-**Status**: Production-ready ✅
+**Status**: Production-ready
